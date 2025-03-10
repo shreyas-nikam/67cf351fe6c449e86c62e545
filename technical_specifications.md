@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the technical specifications for a Streamlit application named "Trigonometric Functions of Any Angle Exploration." The purpose of this application is to help users understand trigonometric functions for any angle using a synthetic dataset resembling the structure and characteristics of a typical mathematical document.
+This document outlines the technical specifications for a multi-page Streamlit application named "Trigonometric Functions of Any Angle Exploration." The purpose of this application is to help users understand trigonometric functions for any angle using a synthetic dataset resembling the structure and characteristics of a typical mathematical document.
 
 ## Objectives
 
