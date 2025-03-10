@@ -1,43 +1,23 @@
-# Trigonometric Functions of Any Angle Exploration
 
-This Streamlit application provides an interactive exploration of trigonometric functions for any angle. The app is organized as a multipage application, each focusing on different functionalities such as angle input, unit circle visualization, and interactive charts.
+# Trigonometric Functions Lab
+
+## Overview
+This multipage Streamlit application, **Trigonometric Functions of Any Angle Exploration**, is designed to help users understand and visualize trigonometric functions across full angle ranges. The app provides interactive components, graphical visualizations, and real-time computation of trigonometric values.
 
 ## Features
+- **Unit Circle Visualization:** Plot a unit circle with the indicated angle and corresponding (x, y) coordinates.
+- **Trigonometric Functions:** Compute and display sine, cosine, tangent, cosecant, secant, and cotangent values.
+- **Interactive Charts:** Explore dynamic line charts showing how each function value varies with the angle.
+- **Explanations and Tooltips:** Inline help messages assist in understanding the mathematical concepts and code functionalities.
 
-- **Angle Input and Computation:** Input an angle (in degrees or radians) and view computed trigonometric values (sine, cosine, tangent, cosecant, secant, cotangent).
-- **Unit Circle Visualization:** Visualize the unit circle with the input angle marked.
-- **Interactive Charts:** Dynamic charts display how trigonometric functions change over a full cycle.
-
-## How to Run
-
-### Locally
-1. Install required libraries:
-   ```
-   pip install -r requirements.txt
-   ```
-2. Run the application:
+## Usage
+1. Run the app using Streamlit:
    ```
    streamlit run app.py
    ```
+2. Use the sidebar to select the page and adjust the angle input.
+3. Choose between degrees and radians for angle measurement.
+4. Explore the visualizations and learn about the underlying math concepts.
 
-### Using Docker
-1. Build the Docker image:
-   ```
-   docker build -t trig_app .
-   ```
-2. Start the container using docker-compose:
-   ```
-   docker-compose up
-   ```
-
-## Folder Structure
-
-- `app.py`: Main entry point.
-- `pages/`: Contains additional pages for the multipage app.
-- `Dockerfile`: Docker image definition.
-- `docker-compose.yml`: Docker Compose configuration.
-- `requirements.txt`: Python dependencies.
-
-## Explanation
-
-This interactive app is designed to help users explore and understand trigonometric functions using dynamic visualizations and real-time interactivity.
+## Installation
+Please refer to the [requirements.txt](requirements.txt) for a list of dependencies.
