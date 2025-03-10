@@ -1,25 +1,22 @@
+
 # Use Python base image
 FROM python:3.12-slim
 
 # Set working directory in the container
 WORKDIR /app
 
-# Copy requirements file
+# Copy requirements and install dependencies
 COPY requirements.txt /app/
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Install dependencies and additional libraries for plotting support
-RUN pip install --upgrade pip && \
-    pip install -r requirements.txt && \
-    apt-get update && apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6
-
-# Copy the rest of the application code
+# Copy the rest of the code
 COPY . /app
 
-# Set the port number via build-time or run-time environment; DO NOT change this port.
+# Set the port number via environment variable (default 8501)
 ENV PORT=8501
 
-# Expose the port
+# Expose the port for Streamlit
 EXPOSE $PORT
 
-# Run Streamlit
+# Run Streamlit in headless mode
 CMD ["bash", "-c", "streamlit run app.py --server.port=$PORT --server.headless=true"]
