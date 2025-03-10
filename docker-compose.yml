@@ -4,10 +4,8 @@ services:
   67cf351fe6c449e86c62e545_service:
     build: .
     container_name: 67cf351fe6c449e86c62e545_container
-    # Adjust your desired external port mapping here. For example:
-    # "8502:8501" means the app is internally on 8501, but externally accessible on 8502.
     ports:
-      - "8503:8501"
+      - "8504:8501"
     environment:
-      - PORT=8501  # This must match the internal port used by Streamlit
+      - PORT=8501
     restart: always
