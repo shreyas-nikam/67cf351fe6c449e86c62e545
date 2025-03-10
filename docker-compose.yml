@@ -7,5 +7,5 @@ services:
     ports:
       - "8504:8501"
     environment:
-      - PORT=8501
+      - PORT=8501  # This must match the internal port used by Streamlit
     restart: always
